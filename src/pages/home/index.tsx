@@ -22,7 +22,7 @@ const columns: GridColDef[] = [
     align: 'right',
     renderCell: ({ value, row }) => (
       <a
-        href={`https://benchmarks.ul.com/hardware/gpu/${row.model}`}
+        href={`https://www.3dmark.com/search#advanced?test=sw%20DX&cpuId=&gpuId=${row.id}&gpuCount=0&gpuType=ALL&deviceType=DESKTOP&storageModel=ALL&showRamDisks=false&memoryChannels=0&country=&scoreType=overallScore&hofMode=false&showInvalidResults=false&freeParams=&minGpuCoreClock=&maxGpuCoreClock=&minGpuMemClock=&maxGpuMemClock=&minCpuClock=&maxCpuClock=`}
         target="_blank"
         rel="noreferrer"
       >
@@ -48,7 +48,7 @@ const columns: GridColDef[] = [
     align: 'right',
     renderCell: ({ value, row }) => (
       <a
-        href={`https://benchmarks.ul.com/hardware/gpu/${row.model}`}
+        href={`https://www.3dmark.com/search#advanced?test=sw%20DXLT&cpuId=&gpuId=${row.id}&gpuCount=0&gpuType=ALL&deviceType=DESKTOP&storageModel=ALL&showRamDisks=false&memoryChannels=0&country=&scoreType=overallScore&hofMode=false&showInvalidResults=false&freeParams=&minGpuCoreClock=&maxGpuCoreClock=&minGpuMemClock=&maxGpuMemClock=&minCpuClock=&maxCpuClock=`}
         target="_blank"
         rel="noreferrer"
       >

@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 1687,
     "model": "NVIDIA GeForce RTX 5090 D",
     "jdPrice": 24999,
     "jdSku": "10135599951069",
@@ -8,7 +8,7 @@
     "steelNomadLight": 50722
   },
   {
-    "id": 2,
+    "id": 1621,
     "model": "NVIDIA GeForce RTX 4090 D",
     "jdPrice": 16599,
     "jdSku": "10140928189957",
@@ -16,7 +16,7 @@
     "steelNomadLight": 39196
   },
   {
-    "id": 3,
+    "id": 1688,
     "model": "NVIDIA GeForce RTX 5080",
     "jdPrice": 9199,
     "jdSku": "10136798472962",
@@ -24,7 +24,7 @@
     "steelNomadLight": 35857
   },
   {
-    "id": 4,
+    "id": 1702,
     "model": "AMD Radeon RX 9070 XT",
     "jdPrice": 5589,
     "jdSku": "10141776486457",
@@ -41,7 +41,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 1526,
     "model": "AMD Radeon RX 7900 XTX",
     "jdPrice": 7399,
     "jdSku": "100064725990",
@@ -58,7 +58,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 1620,
     "model": "NVIDIA GeForce RTX 4080 SUPER",
     "jdPrice": 8199,
     "jdSku": "10138377737655",
@@ -74,7 +74,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 1520,
     "model": "NVIDIA GeForce RTX 4080",
     "jdPrice": 7699,
     "jdSku": "10140341320934",
@@ -83,7 +83,7 @@
     "jdBlacklist": ["10102418208745", "10108511028049", "10102418208746"]
   },
   {
-    "id": 8,
+    "id": 1696,
     "model": "NVIDIA GeForce RTX 5070 Ti",
     "jdPrice": 6699,
     "jdSku": "10130811825802",
@@ -92,7 +92,7 @@
     "jdBlacklist": ["10140608968362", "10140430150000", "10140430150001", "10141905603812"]
   },
   {
-    "id": 9,
+    "id": 1701,
     "model": "AMD Radeon RX 9070",
     "jdPrice": 4799,
     "jdSku": "100183080256",
@@ -100,7 +100,7 @@
     "steelNomadLight": 22482
   },
   {
-    "id": 10,
+    "id": 1525,
     "model": "AMD Radeon RX 7900 XT",
     "jdPrice": 4799,
     "jdSku": "10142431417112",
@@ -108,7 +108,7 @@
     "steelNomadLight": 24695
   },
   {
-    "id": 11,
+    "id": 1615,
     "model": "NVIDIA GeForce RTX 4070 Ti SUPER",
     "jdPrice": 5799,
     "jdSku": "10135317596748",
@@ -128,7 +128,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 1530,
     "model": "NVIDIA GeForce RTX 4070 Ti",
     "jdPrice": 4799,
     "jdSku": "10139488195246",
@@ -136,7 +136,7 @@
     "steelNomadLight": 23647
   },
   {
-    "id": 13,
+    "id": 1700,
     "model": "NVIDIA GeForce RTX 5070",
     "jdPrice": 4799,
     "jdSku": "10142200572116",
@@ -144,7 +144,7 @@
     "steelNomadLight": 22905
   },
   {
-    "id": 14,
+    "id": 1582,
     "model": "AMD Radeon RX 7900 GRE",
     "jdPrice": 4999,
     "jdSku": "100125011625",
@@ -162,7 +162,7 @@
     ]
   },
   {
-    "id": 15,
+    "id": 1614,
     "model": "NVIDIA GeForce RTX 4070 SUPER",
     "jdPrice": 4788,
     "jdSku": "10140507950847",
@@ -171,7 +171,7 @@
     "jdBlacklist": ["10092098375777", "10096962984729"]
   },
   {
-    "id": 16,
+    "id": 1593,
     "model": "AMD Radeon RX 7800 XT",
     "jdPrice": 3649,
     "jdSku": "10123979984780",
@@ -179,7 +179,7 @@
     "steelNomadLight": 18171
   },
   {
-    "id": 17,
+    "id": 1561,
     "model": "NVIDIA GeForce RTX 4070",
     "jdPrice": 3989,
     "jdSku": "10108865105968",
@@ -187,7 +187,7 @@
     "steelNomadLight": 18121
   },
   {
-    "id": 18,
+    "id": 1592,
     "model": "AMD Radeon RX 7700 XT",
     "jdPrice": 2899,
     "jdSku": "10134520182092",
@@ -196,7 +196,7 @@
     "jdBlacklist": ["10137720621291"]
   },
   {
-    "id": 19,
+    "id": 1676,
     "model": "Intel Arc B580",
     "jdPrice": 1839,
     "jdSku": "10142240730009",
@@ -204,7 +204,7 @@
     "steelNomadLight": 11214
   },
   {
-    "id": 20,
+    "id": 1508,
     "model": "Intel Arc A770",
     "jdPrice": 1589,
     "jdSku": "10073395587493",
@@ -212,7 +212,7 @@
     "steelNomadLight": 12699
   },
   {
-    "id": 21,
+    "id": 1570,
     "model": "NVIDIA GeForce RTX 4060 Ti 8 GB",
     "jdPrice": 2499,
     "jdSku": "10094952765616",
@@ -221,7 +221,7 @@
     "jdBlacklist": ["10105983196007"]
   },
   {
-    "id": 22,
+    "id": 1579,
     "model": "NVIDIA GeForce RTX 4060 Ti 16 GB",
     "jdPrice": 3299,
     "jdSku": "10076366797878",
@@ -230,7 +230,7 @@
     "jdBlacklist": ["10104856323163", "10076577579682"]
   },
   {
-    "id": 23,
+    "id": 1680,
     "model": "Intel Arc B570",
     "jdPrice": 1709,
     "jdSku": "10137133044019",
@@ -238,7 +238,7 @@
     "steelNomadLight": 9823
   },
   {
-    "id": 24,
+    "id": 1507,
     "model": "Intel Arc A750",
     "jdPrice": 1349,
     "jdSku": "10118307667433",
@@ -246,7 +246,7 @@
     "steelNomadLight": 10876
   },
   {
-    "id": 25,
+    "id": 1616,
     "model": "AMD Radeon RX 7600 XT",
     "jdPrice": 2276.36,
     "jdSku": "10142218374695",
@@ -255,7 +255,7 @@
     "jdBlacklist": ["100076036131", "10137556171505"]
   },
   {
-    "id": 26,
+    "id": 1572,
     "model": "AMD Radeon RX 7600",
     "jdPrice": 1969.92,
     "jdSku": "10140138322000",
@@ -263,7 +263,7 @@
     "steelNomadLight": 10095
   },
   {
-    "id": 27,
+    "id": 1575,
     "model": "NVIDIA GeForce RTX 4060",
     "jdPrice": 2249,
     "jdSku": "10108885729013",
@@ -271,7 +271,7 @@
     "steelNomadLight": 10687
   },
   {
-    "id": 28,
+    "id": 1596,
     "model": "Intel Arc A580",
     "jdPrice": 1399,
     "jdSku": "10098889682732",
