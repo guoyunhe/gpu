@@ -18,7 +18,7 @@ const columns: GridColDef[] = [
   {
     field: 'steelNomad',
     headerName: 'Steel Nomad DX12 (4K) 跑分',
-    width: 180,
+    width: 210,
     align: 'right',
     renderCell: ({ value, row }) => (
       <a
@@ -33,7 +33,7 @@ const columns: GridColDef[] = [
   {
     field: 'steelNomadRatio',
     headerName: 'Steal Nomad DX12 (4K) 性价比',
-    width: 180,
+    width: 220,
     align: 'right',
     valueGetter: (_value, row) => row.steelNomad / row.jdPrice,
     renderCell: ({ value }) =>
@@ -43,8 +43,8 @@ const columns: GridColDef[] = [
   },
   {
     field: 'steelNomadLight',
-    headerName: 'Steel Nomad Light (2K) 跑分',
-    width: 180,
+    headerName: 'Steel Nomad Light DX12 (2K) 跑分',
+    width: 240,
     align: 'right',
     renderCell: ({ value, row }) => (
       <a
@@ -58,8 +58,8 @@ const columns: GridColDef[] = [
   },
   {
     field: 'steelNomadLightRatio',
-    headerName: 'Steel Nomad Light (2K) 性价比',
-    width: 180,
+    headerName: 'Steel Nomad Light DX12 (2K) 性价比',
+    width: 250,
     align: 'right',
     valueGetter: (_value, row) => row.steelNomadLight / row.jdPrice,
     renderCell: ({ value }) =>
