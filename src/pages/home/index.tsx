@@ -7,7 +7,7 @@ const columns: GridColDef[] = [
   {
     field: 'jdPrice',
     headerName: '京东价格',
-    width: 125,
+    width: 100,
     align: 'right',
     renderCell: ({ value, row }) => (
       <a href={`https://item.jd.com/${row.jdSku}.html`} target="_blank" rel="noreferrer">
@@ -18,7 +18,7 @@ const columns: GridColDef[] = [
   {
     field: 'steelNomad',
     headerName: 'Steel Nomad (4K) 跑分',
-    width: 200,
+    width: 175,
     align: 'right',
     renderCell: ({ value, row }) => (
       <a
@@ -33,7 +33,7 @@ const columns: GridColDef[] = [
   {
     field: 'steelNomadRatio',
     headerName: 'Steal Nomad (4K) 性价比',
-    width: 210,
+    width: 190,
     align: 'right',
     valueGetter: (_value, row) => row.steelNomad / row.jdPrice,
     renderCell: ({ value }) =>
@@ -44,7 +44,7 @@ const columns: GridColDef[] = [
   {
     field: 'steelNomadLight',
     headerName: 'Steel Nomad Light (2K) 跑分',
-    width: 230,
+    width: 210,
     align: 'right',
     renderCell: ({ value, row }) => (
       <a
@@ -59,7 +59,7 @@ const columns: GridColDef[] = [
   {
     field: 'steelNomadLightRatio',
     headerName: 'Steel Nomad Light (2K) 性价比',
-    width: 250,
+    width: 220,
     align: 'right',
     valueGetter: (_value, row) => row.steelNomadLight / row.jdPrice,
     renderCell: ({ value }) =>
@@ -90,6 +90,7 @@ export default function HomePage() {
         },
       }}
       pageSizeOptions={[20, 50, 100]}
+      disableColumnMenu
     />
   );
 }
