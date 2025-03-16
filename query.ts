@@ -19,17 +19,11 @@ const browser = await puppeteer.launch({
 
 const page = await browser.newPage();
 
-await page.goto('https://search.jd.com/Search?keyword=9070xt');
-
-// 检测 JD 登陆状态，如未登录有 60s 时间完成登陆
-await page.waitForSelector('a.nickname', { timeout: 60 * 1000 });
-
-console.log('京东登录成功');
-
 const json = await fs.readFile(filePath, 'utf-8');
 
 const list = JSON.parse(json);
 
+// 京东查价格
 for (const item of list) {
   console.log('-----------');
   console.log(item.model);
@@ -44,7 +38,10 @@ for (const item of list) {
   url.searchParams.set('ev', 'exprice_1000gt^');
 
   await page.goto(url.toString());
+  // 确保未被拦截
   await page.waitForSelector('li.gl-item');
+  // 确保已登录，否则不显示价格
+  await page.waitForSelector('a.nickname');
   await page.waitForNetworkIdle();
   let priceList = await page.$$eval('li.gl-item', (products) =>
     Array.from(products)
