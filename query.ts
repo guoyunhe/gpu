@@ -68,6 +68,7 @@ for (const item of list) {
   // 计算价格中位数
   const middlePrice = priceList[Math.floor(priceList.length / 2)].price;
   console.log('middlePrice', middlePrice);
+
   item.jdPrice = 999999;
   priceList.forEach((priceItem) => {
     if (
@@ -79,7 +80,6 @@ for (const item of list) {
       item.jdSku = priceItem.sku;
     }
   });
-  item.ratio = item.steelNomad / item.jdPrice;
   console.log(item.jdSku, item.jdPrice);
 
   await fs.writeFile(filePath, JSON.stringify(list, null, 2));

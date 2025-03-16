@@ -5,9 +5,20 @@ import xior from 'xior';
 const columns: GridColDef[] = [
   { field: 'model', headerName: '型号', width: 250 },
   {
+    field: 'jdPrice',
+    headerName: '京东价格',
+    width: 100,
+    align: 'right',
+    renderCell: ({ value, row }) => (
+      <a href={`https://item.jd.com/${row.jdSku}.html`} target="_blank" rel="noreferrer">
+        {new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY' }).format(value)}
+      </a>
+    ),
+  },
+  {
     field: 'steelNomad',
-    headerName: 'Steel Nomad 跑分',
-    width: 120,
+    headerName: 'Steel Nomad DX12 (4K) 跑分',
+    width: 180,
     align: 'right',
     renderCell: ({ value, row }) => (
       <a
@@ -20,21 +31,37 @@ const columns: GridColDef[] = [
     ),
   },
   {
-    field: 'jdPrice',
-    headerName: '京东价格',
-    width: 100,
+    field: 'steelNomadRatio',
+    headerName: 'Steal Nomad DX12 (4K) 性价比',
+    width: 180,
+    align: 'right',
+    valueGetter: (_value, row) => row.steelNomad / row.jdPrice,
+    renderCell: ({ value }) =>
+      new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 2, minimumFractionDigits: 2 }).format(
+        value,
+      ),
+  },
+  {
+    field: 'steelNomadLight',
+    headerName: 'Steel Nomad Light (2K) 跑分',
+    width: 180,
     align: 'right',
     renderCell: ({ value, row }) => (
-      <a href={`https://item.jd.com/${row.jdSku}.html`} target="_blank" rel="noreferrer">
-        {new Intl.NumberFormat('zh-CN', { style: 'currency', currency: 'CNY' }).format(value)}
+      <a
+        href={`https://benchmarks.ul.com/hardware/gpu/${row.model}`}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {new Intl.NumberFormat('zh-CN').format(value)}
       </a>
     ),
   },
   {
-    field: 'ratio',
-    headerName: '性价比',
-    width: 90,
+    field: 'steelNomadLightRatio',
+    headerName: 'Steel Nomad Light (2K) 性价比',
+    width: 180,
     align: 'right',
+    valueGetter: (_value, row) => row.steelNomadLight / row.jdPrice,
     renderCell: ({ value }) =>
       new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 2, minimumFractionDigits: 2 }).format(
         value,
