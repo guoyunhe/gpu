@@ -31,3 +31,6 @@ coverage
 
 # Environments (dotenv) and configurations
 .env
+
+# Puppeteer
+puppeteer-data
