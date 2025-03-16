@@ -29,7 +29,6 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@fontsource/roboto": "^5.2.5",
-    "@guoyunhe/react-auth": "3.0.0-4",
     "@mui/icons-material": "^6.4.7",
     "@mui/material": "^6.4.7",
     "i18next": "^24.2.3",

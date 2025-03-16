@@ -17,9 +17,6 @@ importers:
       '@fontsource/roboto':
         specifier: ^5.2.5
         version: 5.2.5
-      '@guoyunhe/react-auth':
-        specifier: 3.0.0-4
-        version: 3.0.0-4(react@18.3.1)(wouter@3.6.0(react@18.3.1))(xior@0.6.3)
       '@mui/icons-material':
         specifier: ^6.4.7
         version: 6.4.7(@mui/material@6.4.7(@emotion/react@11.14.0(@types/react@18.3.18)(react@18.3.1))(@emotion/styled@11.14.0(@emotion/react@11.14.0(@types/react@18.3.18)(react@18.3.1))(@types/react@18.3.18)(react@18.3.1))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@types/react@18.3.18)(react@18.3.1)
@@ -1001,13 +998,6 @@ packages:
   '@gulpjs/to-absolute-glob@4.0.0':
     resolution: {integrity: sha512-kjotm7XJrJ6v+7knhPaRgaT6q8F8K2jiafwYdNHLzmV0uGLuZY43FK6smNSHUPrhq5kX2slCUy+RGG/xGqmIKA==}
     engines: {node: '>=10.13.0'}
-
-  '@guoyunhe/react-auth@3.0.0-4':
-    resolution: {integrity: sha512-SCZwOHpmlUAuC3QXzcMWn3tCceIuCLiCbEkvE0yY/dBoMEdqOqmkHCw6tKyqjogxIod5h+wUOrJmeOZlKe0gAw==}
-    peerDependencies:
-      react: '>=16.8.0'
-      wouter: ^3.6.0
-      xior: '*'
 
   '@guoyunhe/react-storage@2.0.0':
     resolution: {integrity: sha512-kjE1pMM8dMxnIMvX+QvFZ9HAyd5Gvtu8S3kNH+LAkyPmWPLCFTZ55VXGDdDOInAe2w4hQSLh3zPHjbv0A2Vybw==}
@@ -4783,14 +4773,6 @@ snapshots:
   '@gulpjs/to-absolute-glob@4.0.0':
     dependencies:
       is-negated-glob: 1.0.0
-
-  '@guoyunhe/react-auth@3.0.0-4(react@18.3.1)(wouter@3.6.0(react@18.3.1))(xior@0.6.3)':
-    dependencies:
-      '@guoyunhe/react-storage': 2.0.0(react@18.3.1)
-      '@guoyunhe/use-latest-callback': 1.0.0(react@18.3.1)
-      react: 18.3.1
-      wouter: 3.6.0(react@18.3.1)
-      xior: 0.6.3
 
   '@guoyunhe/react-storage@2.0.0(react@18.3.1)':
     dependencies:
