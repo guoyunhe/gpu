@@ -1,24 +1,12 @@
-import { Menu as MenuIcon } from '@mui/icons-material';
+import { GitHub } from '@mui/icons-material';
 import { AppBar, Box, IconButton, Stack, Toolbar, Typography } from '@mui/material';
 import { ThemeToggle } from 'material-app';
 import { Link } from 'wouter';
 
-export interface TopNavProps {
-  onMenuButtonClick: () => void;
-}
-
-export default function TopNav({ onMenuButtonClick }: TopNavProps) {
+export default function TopNav() {
   return (
     <AppBar position="static" color="transparent" elevation={0}>
       <Toolbar>
-        <IconButton
-          color="inherit"
-          edge="start"
-          onClick={onMenuButtonClick}
-          sx={{ display: { sm: 'none' } }}
-        >
-          <MenuIcon />
-        </IconButton>
         <Box
           component={Link}
           to="/"
@@ -38,6 +26,9 @@ export default function TopNav({ onMenuButtonClick }: TopNavProps) {
         <Stack direction="row" ml={3} sx={{ display: { xs: 'none', sm: 'flex' } }} />
         <Box flex="1 1 auto" />
         <ThemeToggle />
+        <IconButton component="a" href="https://github.com/guoyunhe/gpu">
+          <GitHub fontSize="inherit" />
+        </IconButton>
       </Toolbar>
     </AppBar>
   );

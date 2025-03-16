@@ -25,7 +25,6 @@ npm run build
 - [react](https://reactjs.org/) - the user interface framework
 - [wouter](https://github.com/molefrog/wouter/) - the routing library for single-page-application
 - [mui](https://mui.com/) - the design system and component library
-- [i18next](https://react.i18next.com/) - the internationalization solution
 - [xior](https://xior-http.com/) - the http client to send API requests
 - [vitest](https://vitest.dev/) - the unit test runner
 - [testing-library](https://testing-library.com/) - the unit test toolkit for react

@@ -3,7 +3,6 @@ import { MaterialApp } from 'material-app';
 import { Suspense } from 'react';
 import { FetchConfigProvider, IndexedDBStore } from 'react-fast-fetch';
 import xior from 'xior';
-import { themes } from './config/theme';
 import LandingLayout from './layouts/landing';
 import HomePage from './pages/home';
 
@@ -27,7 +26,7 @@ export default function App() {
           />
         }
       >
-        <MaterialApp themes={themes}>
+        <MaterialApp>
           <LandingLayout>
             <HomePage />
           </LandingLayout>
