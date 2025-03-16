@@ -20,7 +20,7 @@ export default function TopNav() {
             sx={{ mr: 1, display: { xs: 'none', sm: 'block' } }}
           />
           <Typography fontSize={20} color="inherit" component="div">
-            GPU 比价
+            GPU 比价工具
           </Typography>
         </Box>
         <Stack direction="row" ml={3} sx={{ display: { xs: 'none', sm: 'flex' } }} />
