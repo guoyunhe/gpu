@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import xior from 'xior';
 
 function getColor(value: number, min: number, max: number) {
-  return `hsl(${Math.round((Math.min(Math.max(value - min, 0), max - min) / (max - min)) * 120)}deg 100% 50%)`;
+  return `hsl(${Math.round((Math.min(Math.max(value - min, 0), max - min) / (max - min)) * 120)}deg 80% 45%)`;
 }
 
 const columns: GridColDef[] = [
