@@ -2,6 +2,10 @@ import { DataGrid, GridColDef } from '@mui/x-data-grid';
 import { useEffect, useState } from 'react';
 import xior from 'xior';
 
+function getColor(value: number, min: number, max: number) {
+  return `hsl(${Math.round((Math.min(Math.max(value - min, 0), max - min) / (max - min)) * 120)}deg 100% 50%)`;
+}
+
 const columns: GridColDef[] = [
   { field: 'model', headerName: '型号', width: 200, sortingOrder: ['asc', 'desc'] },
   {
@@ -39,10 +43,18 @@ const columns: GridColDef[] = [
     align: 'right',
     sortingOrder: ['desc', 'asc'],
     valueGetter: (_value, row) => row.steelNomad / row.jdPrice,
-    renderCell: ({ value }) =>
-      new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 2, minimumFractionDigits: 2 }).format(
-        value,
-      ),
+    renderCell: ({ value }) => (
+      <span
+        style={{
+          color: getColor(value, 0.5, 1.5),
+        }}
+      >
+        {new Intl.NumberFormat('zh-CN', {
+          maximumFractionDigits: 2,
+          minimumFractionDigits: 2,
+        }).format(value)}
+      </span>
+    ),
   },
   {
     field: 'steelNomadLight',
@@ -67,10 +79,18 @@ const columns: GridColDef[] = [
     align: 'right',
     sortingOrder: ['desc', 'asc'],
     valueGetter: (_value, row) => row.steelNomadLight / row.jdPrice,
-    renderCell: ({ value }) =>
-      new Intl.NumberFormat('zh-CN', { maximumFractionDigits: 2, minimumFractionDigits: 2 }).format(
-        value,
-      ),
+    renderCell: ({ value }) => (
+      <span
+        style={{
+          color: getColor(value, 3, 6),
+        }}
+      >
+        {new Intl.NumberFormat('zh-CN', {
+          maximumFractionDigits: 2,
+          minimumFractionDigits: 2,
+        }).format(value)}
+      </span>
+    ),
   },
 ];
 
